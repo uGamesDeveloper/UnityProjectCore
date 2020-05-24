@@ -4,7 +4,7 @@ This Asset was created to help you quickly start developing any projects on Unit
 * Images
 * Materials
 
-etc.
+etc
 
 You do not have to create them every time you create a project!
 We have added a control system based on Actions using the "state" pattern.
