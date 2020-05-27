@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace uGames.Managers
 {
@@ -26,5 +27,6 @@ namespace uGames.Managers
         {
             _managerUpdate.LateUpdate();
         }
+        
     }
 }

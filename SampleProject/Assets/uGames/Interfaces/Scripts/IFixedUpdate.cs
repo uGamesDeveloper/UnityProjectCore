@@ -2,7 +2,7 @@
 {
     public interface ILateUpdate
     {
-        void OnLateUpdate();
+        void LateUpdate();
     }
 }
 

@@ -2,7 +2,7 @@
 {
     public interface IFixedUpdate
     {
-        void OnFixedUpdate();
+        void FixedUpdate();
     }
 }
 

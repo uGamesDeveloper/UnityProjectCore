@@ -62,22 +62,35 @@ namespace uGames.Managers
         {
             for (int i = 0; i < _updates.Count; i++)
             {
-                _updates[i].OnUpdate();
+                _updates[i].Update();
             }
         }
         public void FixedUpdate()
         {
             for (int i = 0; i < _fixedUpdates.Count; i++)
             {
-                _fixedUpdates[i].OnFixedUpdate();
+                _fixedUpdates[i].FixedUpdate();
             }
         }
         public void LateUpdate()
         {
             for (int i = 0; i < _lateUpdates.Count; i++)
             {
-                _lateUpdates[i].OnLateUpdate();
+                _lateUpdates[i].LateUpdate();
             }
+        }
+
+        public virtual void OnUpdate()
+        {
+            
+        }
+        public virtual void OnFixedUpdate()
+        {
+            
+        }
+        public virtual void OnLateUpdate()
+        {
+            
         }
     }
 }

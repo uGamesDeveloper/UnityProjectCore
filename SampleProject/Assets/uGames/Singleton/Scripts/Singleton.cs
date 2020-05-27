@@ -19,8 +19,17 @@ namespace uGames
                     return null;
                 lock (_lock)
                 {
-                    if (!_instance)
+                    if (_instance == null)
+                    {
                         _instance = FindObjectOfType<T>();
+                        if (_instance == null)
+                        {
+                            GameObject singleton = new GameObject("[" + typeof(T).ToString() + "]");
+                            _instance = singleton.AddComponent<T>();
+                            DontDestroyOnLoad(singleton);
+                        }
+                    }
+
                     return _instance;
                 }
             }
