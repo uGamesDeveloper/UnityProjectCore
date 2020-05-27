@@ -25,7 +25,7 @@ namespace uGames.Managers
         
         public static void AddTo(object updateble)
         {
-            ManagerUpdate managerUpdate = ToolBox.TryGetManager<ManagerUpdate>();
+            ManagerUpdate managerUpdate = ManagerBox.TryGetManager<ManagerUpdate>();
             
             if(!managerUpdate)
                 return;
@@ -42,7 +42,7 @@ namespace uGames.Managers
         
         public static void Remove(object updateble)
         {
-            ManagerUpdate managerUpdate = ToolBox.TryGetManager<ManagerUpdate>();
+            ManagerUpdate managerUpdate = ManagerBox.TryGetManager<ManagerUpdate>();
             
             if(!managerUpdate)
                 return;

@@ -1,14 +1,13 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using uGames.Managers;
 using UnityEngine;
 
 namespace uGames
 {
     /// <summary>
-    /// Класс является стартером - передает список менеджеров в ToolBox
+    /// Класс является стартером - передает список менеджеров в ManagerBox
     /// </summary>
-    public class Setup : MonoBehaviour
+    public class Starter : MonoBehaviour
     {
         public List<ManagerBase> managers = new List<ManagerBase>();
 
@@ -16,7 +15,7 @@ namespace uGames
         {
             foreach (var managerBase in managers)
             {
-                ToolBox.Add(managerBase);
+                ManagerBox.Add(managerBase);
             }
         }
     }

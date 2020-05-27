@@ -7,7 +7,7 @@ using uGames.Managers;
 /// <summary>
 /// 
 /// </summary>
-public class ToolBox : Singleton<ToolBox>
+public class ManagerBox : Singleton<ManagerBox>
 {
     /// <summary>
     /// Контейнер для всех менеджеров. Ключом выступает тип менеджера. Значением любой object.
@@ -17,7 +17,7 @@ public class ToolBox : Singleton<ToolBox>
     private Dictionary<Type, object> _data = new Dictionary<Type, object>();
 
     /// <summary>
-    /// Добавляет менеджеры в ToolBox
+    /// Добавляет менеджеры в ManagerBox
     /// </summary>
     /// <param name="obj"></param>
     public static void Add(object obj)
